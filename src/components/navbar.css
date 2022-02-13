@@ -1,14 +1,56 @@
 .nav-scrolled {
     background: whitesmoke;
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.6);
-    max-height: 120px;
+    max-height: 100px;
+    opacity: 99%;
+    color: black;
+    box-shadow: 0px 3px 3px lightgrey;
+}
+
+.nav-scrolled a {
+    color: black;
+    outline-color: blue;
+    outline-offset: 4px;
+    border-color: black;
+}
+
+.nav-top {
+
+}
+
+.svg {
+   width: 100%;
+}
+
+.curved {
+background-color: #f1f5f9;
+}
+
+.mobile-menu {
+    padding-bottom: 6px;
+    justify-content: right;
+    color: black;
+    opacity: 80%;
+}
+
+.mobile-menu.show {
+    display: block;
+}
+
+.menu-scrolled {
+    background: whitesmoke;
     opacity: 99%;
     color: black;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .logo {
-        display: none;
+
+        min-width: 120px;
+        min-height: 62px;
+
+    }
+    .mobile-button {
+
     }
 }
 

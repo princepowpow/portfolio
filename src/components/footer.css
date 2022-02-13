@@ -1,8 +1,60 @@
 .footer {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+
     font-weight: bold;
+    max-height: 140px;
+}
+.try2 {
+
+}
+
+.try2:nth-child(1n) {
+    animation: mytry2 3.5s ease-in-out alternate-reverse infinite;
+    animation-fill-mode: forwards;
+
+}
+
+.try2:nth-child(2n) {
+    animation: mytry 3.5s ease-in-out alternate infinite;
+    animation-fill-mode: forwards;
+
+
+}
+
+.try2:nth-child(3n) {
+    animation: mytry3 4s ease-in-out alternate-reverse infinite;
+    animation-fill-mode: forwards;
+
+
+}
+
+.try2:nth-child(4n) {
+    animation: mytry4 3s ease-in-out alternate infinite;
+    animation-fill-mode: forwards;
+
+
+}
+
+@keyframes mytry {
+    0% { width: 90%; }
+    100% { width: 100%; }
+}
+
+
+@keyframes mytry2 {
+    0% { width: 85%; }
+    100% { width: 100%; }
+}
+
+@keyframes mytry3 {
+    0% { width: 75%; }
+    100% { width: 100%; }
+}
+
+@keyframes mytry4 {
+    0% { width: 70%; }
+    100% { width: 100%; }
 }
 
 .footer-social-media {
@@ -11,6 +63,11 @@
     justify-content: center;
     margin-bottom: 20px;
     margin-top: 20px;
+}
+
+.hoch {
+    position: relative;
+    top: -40px;
 }
 
 .footer-social-media__icon {
@@ -70,7 +127,6 @@
 
 .footer-bottom__name {
     text-transform: uppercase;
-    font-family: RobotoBold;
     font-size: large;
     margin: 0px 20px;
 }

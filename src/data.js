@@ -12,7 +12,7 @@ export const projects = [
         subtitle: "Customer Service & Complaint-Management",
         description:
             "Ob Unternehmen, Künstler oder private Person, ich möchte ihre Webseite nach individuellen Wünschen gestalten. Meine Idee ist es, allen eine übersichtliche Webseite zu erstellen, die gerne eine haben möchten oder benötigen. Wenn Sie bereits mit der Planung Probleme haben, können wir auch gerne eine Konzept erstellen und dieses gemeinsam mit Ihnen besprechen. Die Webseite wird also ganz nach ihren Wünschen angefertigt.",
-        image: "./PlakatBreckow_PlakatFinal123444.png",
+        image: "./Plakat.png",
         link: "#projects",
     },
     {
@@ -33,7 +33,7 @@ export const projects = [
     },
 ];
 
-export const skills = ["Skateboarding", "Communication","HTML", "TailwindCSS", "TypeScript", "Community-Management", "InDesign", "Premiere Pro"];
+export const skills = ["Communication", "TypeScript", "React", "CSS", "Community-Management", "HTML", "Social-Media-Marketing", "InDesign", "Illustrator", "Photoshop", "Premiere Pro", "Skateboarding", "Wordpress", "Social-Media-Strategies"];
 
 
 

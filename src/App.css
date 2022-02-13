@@ -1,5 +1,30 @@
 .App {
   text-align: center;
+
+}
+
+@media (min-width: 1010px) {
+  .container {
+    max-width: 880px;
+  }
+}
+
+@media (min-width: 1180px) {
+  .container {
+    max-width: 1080px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1305px;
+  }
+}
+
+@media (min-width: 1836px) {
+  .container {
+    max-width: 1505px;
+  }
 }
 
 .App-logo {
@@ -13,20 +38,83 @@
   }
 }
 
+
+
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #f1f5f9;
+  min-height: 120vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(20px + 2vmin);
+  color: #416E0D;
 }
 
 .App-link {
   color: #61dafb;
 }
+
+
+.hero {
+  transform: translateX(30);
+  opacity: 100%;
+}
+
+@media screen and (max-width: 1450px) {
+  .hero {
+    opacity: 0%;
+  }
+
+}
+
+@media screen and (min-width: 2650px) {
+  .herofade {
+    animation: none!important;
+    animation-iteration-count: 0;
+    animation-fill-mode: forwards;
+  }
+
+}
+
+.herofade {
+  animation: img-fade 1s ease-in 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.heroauftauchen {
+  animation: img-fade2 5s ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes img-fade {
+  from {
+    transform: translateX(30);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1.0;
+  }
+}
+
+@keyframes img-fade2 {
+  0% {
+    transform: translateX(30);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(15);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1.0;
+  }
+}
+
 
 @keyframes App-logo-spin {
   from {
@@ -34,5 +122,18 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.transition {
+  animation: transi 0s;
+}
+
+@keyframes transi {
+  from {opacity: 0;
+  transform: rotate(-1deg)}
+  to {
+    opacity: 1.0;
+    transform: rotate(0deg);
   }
 }

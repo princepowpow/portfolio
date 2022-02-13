@@ -1,0 +1,75 @@
+.cv-box{
+    align-items: center;
+    align-self: center;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+.pic {
+    width: 1024px;
+    height: 180px;
+}
+
+.chronoo {
+
+}
+
+.css-16u30nb-TimelineControlContainer {
+
+}
+
+.vid {
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+}
+
+.left{
+    background-size: cover;
+
+}
+
+.right{
+    padding: 25px 40px;
+}
+.person-info {
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.rotatefull {
+
+    animation: drehen2 4s ease-in-out  alternate infinite;
+
+}
+
+.rotatehalf {
+    animation: drehen 4s alternate infinite;
+}
+
+@keyframes drehen {
+    0% { width: 99%;
+    transform: rotate(0deg);
+        perspective-origin: 25% 75%;
+    }
+
+    100% { width: 100%;
+    transform: rotate(360deg);
+        perspective-origin: 0% 50%;
+    }
+}
+
+@keyframes drehen2 {
+    from { transform:translate(-50px,-2px)}
+    to {transform:translate(0px,0px)}
+}
+
+
+@media screen and (max-width: 1536px){
+    .cv-box{
+        grid-template-columns: 1fr;
+    }
+    .left{
+
+    }
+}
